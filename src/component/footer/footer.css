@@ -1,0 +1,118 @@
+
+.logo
+{
+  width: 180px;
+  height: 180px;
+  float: left; /* Обтікання картинки ліворуч */
+  margin-right: 10px; /* Додайте відступ між картинкою та текстом */
+}
+.menuFooter h1
+{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.containerFooter {
+  
+  display: flex;
+  height: 100%; 
+  font-family: 'Comic Sans MS', cursive; 
+  background-color: #e4c8cd;
+}
+
+.column {
+  flex: 1;
+  height: 100%; 
+}
+h4
+{
+  color: #40151f;
+  text-align: justify;
+  padding-right: 10px;
+}
+
+.infoFooter
+{
+  padding-top:5px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  color: #40151f;
+}
+.infoFooter img
+{
+width: 20px;
+height: auto;
+padding-right: 10px;
+
+}
+.ulFooter {
+  list-style: none;
+  padding: 0;
+  margin-left: 150px;
+  color: #40151f;
+}
+.ulFooter a
+{
+  text-decoration: none;
+  color: #40151f;
+}
+.ulFooter a:hover
+{
+  color: #f8f8f8;
+}
+.ulFooter li {
+  margin-bottom: 8px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #40151f;
+}
+
+.ulFooter li:before {
+  content: ">";
+  left: 0; 
+  padding-right: 10px;
+  color: #f8f8f8;
+  font-weight: bold;
+}
+.social_Networks h1
+{
+  margin: 0;
+  margin-bottom: 10px;
+}
+.social_Networks {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.fon_footer
+{
+  background-image: url('../../images/fon2.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 300px 400px;
+}
+.socialNetwork {
+  display: flex;
+  align-items: center; 
+  font-size: 24px;
+}
+.socialNetwork a{
+  text-decoration: none;
+  color: #40151f;
+}
+.socialNetwork a:hover
+{
+  color: #f8f8f8;
+}
+.socialNetwork Img {
+  margin-right: 10px; 
+  width: 40px;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+
+
+
+

@@ -1,0 +1,204 @@
+
+.linkProduct {
+  background-color: #e4c8cd;
+  border: none;
+  color: #40151f;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none; /* Забезпечує зняття підкреслення для посилань */
+  font-family: 'Comic Sans MS', cursive;
+  display: inline-block; /* Зробить посилання блочним елементом для відстані між ними */
+  margin-top: 10px; /* Додавання відстані між карточками */
+  position: relative;
+  bottom: 10px;
+  left: 10px; 
+}
+
+.linkProduct:hover {
+  background-color: #8c323d;
+  color: #f8f8f8;
+  text-decoration: none; /* Забезпечує зняття підкреслення при наведенні */
+}
+
+
+
+.containerProduct {
+    font-family: 'Comic Sans MS', cursive; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin: 0 -10px; 
+    align-items: center;
+    width: 100%; 
+    margin-bottom: 50px;
+margin-top: 50px;
+  }
+  .counter
+  {
+    font-family: 'Comic Sans MS', cursive; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+
+  }
+  .counter input
+  {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .cardProduct {
+    
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e4c8cd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 0 10px;
+    transform: scale(1);
+   transition: transform 0.2s;
+   flex-basis: calc(20% - 10px); /* 33.33% - 10px простору між елементами */
+    margin-bottom: 10px;
+  }
+  .cardProduct:hover {
+
+    transform: scale(1.1);
+  }
+  .cardProduct img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .cardProduct h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #8c323d;
+  }
+  
+  .cardProduct p {
+    font-size: 16px;
+    color: #e4c8cd;
+    margin: 5px 0;
+  }
+  
+  
+  
+  .quantity-buttonProduct {
+    background-color: #e4c8cd;
+    border: none;
+    color: #40151f;
+    font-size: 20px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  .quantity-buttonProduct:hover
+  {
+    background-color: #8c323d;
+    color: #f8f8f8;
+  }
+  
+  
+  .add-buttonProduct {
+    background-color: #e4c8cd;
+    border: none;
+    color: #40151f;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Comic Sans MS', cursive;
+    bottom: 10px;
+    right: 10px;
+    position: relative;
+  }
+  
+  .add-buttonProduct:hover {
+    background-color: #8c323d;
+    color: #f8f8f8;
+  }
+
+  
+  .category-card-container {
+    font-family: 'Comic Sans MS', cursive; 
+    display: flex;
+    justify-content: space-between; 
+    margin: 0 -10px;
+  }
+
+  .category-card {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e4c8cd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 0 10px;
+  }
+  
+  .category-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .category-card h2 {
+    font-size: 20px;
+    
+    color: #8c323d;
+  }
+  
+  .category-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+
+  .category-link {
+    background-color: #e4c8cd;
+    border: none;
+    color: #8c323d;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+   
+  }
+  
+  .category-link:hover {
+    background-color: #8c323d;
+    color: #f8f8f8;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }

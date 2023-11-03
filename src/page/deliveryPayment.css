@@ -1,0 +1,53 @@
+.delivery-payment-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e4c8cd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Comic Sans MS', cursive; 
+    font-size: 24px; 
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.delivery-payment-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.delivery-payment-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-payment-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.delivery-payment-form select,
+input[type="radio"] {
+   
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.delivery-payment-form button {
+    background-color: #a66a66;
+    color: #f8f8f8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive; 
+}
+
+.delivery-payment-form button:hover {
+    background-color: #8c323d;
+}

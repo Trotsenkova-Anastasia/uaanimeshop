@@ -1,0 +1,40 @@
+component
+    -> header
+        -> header_top
+            info
+        -> header_midle
+            logo
+            search
+            cart
+        -> header_bottom
+            menu
+    -> main
+        -> side_bar
+            menu_category
+            baner
+        -> content
+            slider_home
+            carusel_brand
+            carusel_product
+            tabs_product
+            cart_product
+    -> footer
+        logo
+        menu_footer
+        social_networks
+
+page
+    -> home
+    -> category
+    -> card_product
+    -> cart
+    -> contact
+    -> deliveryPayment
+elements
+    Img
+    Button
+    A
+    P
+    Form
+images
+fonts

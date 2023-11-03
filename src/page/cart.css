@@ -1,0 +1,188 @@
+
+.cart_conteiner
+{
+  display: flex;
+margin-bottom: 50px;
+font-family: 'Comic Sans MS', cursive;
+color: #8c323d;
+
+}
+.image-container
+{
+  width: 30%;
+  height: auto;
+  margin-left: 300px;
+  margin-top: 20px;
+
+}
+.name h3
+{
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* margin-left: 300px; */
+}
+.info_product
+{
+  width: 70%;
+  height: auto;
+  
+  margin-top: 20px;
+  margin-right: 10%;
+  padding-left: 150px;
+}
+.info_product p
+{
+  font-family: 'Comic Sans MS', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  /* text-align: right; */
+  
+  margin-bottom: 0;
+ margin-top: 10px;
+ padding: 0;
+}
+
+.rating {
+  font-size: 24px;
+  color: #ffcc00; 
+  /* text-align: right; */
+ 
+  margin-bottom: 50px;
+}
+
+.star {
+  display: inline-block;
+  cursor: pointer;
+  color: gold;
+  font-size:52px;
+}
+.star.empty::before {
+  content: "\2606"; 
+  color: gold;
+  font-size:52px;
+}
+
+.availability-block {
+  display: block;  
+  /* text-align: right; */
+ 
+ margin-bottom: 50px;
+}
+
+.availability-text {
+  display: inline-block; 
+}
+
+.availability-block .availability-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.availability-block .availability-text {
+  font-size: 16px;
+  background-color: #4CAF50; 
+  color: #fff; 
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.horizontal-line {
+  border: 1px solid #ccc; 
+  width: 300px;
+  float: right;
+}
+.inf_delivery
+{
+  
+  width: 100%;
+  float: right;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #e4c8cd;
+  padding: 10px 10px 10px 10px;
+  margin-left: 50px;
+}
+
+.original-price {
+  font-size: 18px;
+  color: #333;
+}
+
+.discount {
+  font-size: 16px;
+  color: #ff0000;
+}
+
+.final-price {
+  font-size: 20px;
+  color: #008000;
+}
+
+.AddbuttonProduct
+{
+  font-family: 'Comic Sans MS', cursive;
+    background-color: #e4c8cd;
+    border: none;
+    color: #40151f;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    float: right;
+    margin-top: 20px;
+    position: relative;
+}
+.AddbuttonProduct:hover {
+  background-color: #8c323d;
+  color: #f8f8f8;
+}
+
+
+.recomend
+{
+  margin-bottom: 50px;
+}
+.recomend img
+{
+width: 200px;
+height: auto;
+}
+
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  
+  border-radius: 5px 5px 0 0;
+  background-color: #f0f0f0;
+}
+
+.tab.active {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+
+.tab-content {
+  border: 1px solid #ddd;
+  border-radius: 0 0 5px 5px;
+  padding: 20px;
+  background-color: #fff;
+  max-height: 350px;
+  max-width: 700px;
+  word-wrap: break-word;
+  overflow-x: auto;
+  white-space: normal;
+}

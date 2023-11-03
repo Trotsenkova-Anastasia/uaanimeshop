@@ -1,0 +1,42 @@
+.dropdown button
+{
+    border: none;
+    background-color: #e4c8cd;
+    font-family: 'Comic Sans MS', cursive; 
+    font-size: 24px; 
+    font-weight: bold;
+    color: #40151f;
+    letter-spacing: 2px;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    cursor: pointer;
+}
+.menu
+{
+    position: absolute;
+   background-color: #e4c8cd;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    max-height: 500px; 
+    overflow-y: auto; 
+    transition: max-height 0.3s ease-in;
+}
+.menu li
+{
+text-decoration: none;
+display: block;
+padding: 0;
+margin: 0;
+
+}
+.menu a
+{
+    font-size: 18px;
+}
+.menu a:hover
+{
+    background-color: #f8f8f8;
+}
+
+
