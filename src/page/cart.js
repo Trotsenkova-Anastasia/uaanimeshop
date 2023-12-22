@@ -17,6 +17,30 @@ function Cart() {
   const [showModal, setShowModal] = useState(false);
   const [addedToCart, setAddedToCart] = useState(false);
   const [showModalTimeout, setShowModalTimeout] = useState(0);
+  
+  const [feedbacks, setFeedbacks] = useState([]);
+  const [category, setCategory] = useState([]);
+  const category_id=searchParams.get("category")
+  
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/feedback")
+      .then((response) => response.json())
+      .then((json) => {
+        console.log(json); // Log the data for debugging
+        setFeedbacks(json);
+      });
+  }, []);
+  
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/category")
+      .then((response) => response.json())
+      .then((json) => {
+        console.log(json); // Log the data for debugging
+        setCategory(json);
+      });
+  }, []);
+  const category_product = category.find((category) =>category.id==category_id);
+ 
   useEffect(() => {
     if (showModalTimeout > 0) {
       const timeoutId = setTimeout(() => {
@@ -74,7 +98,7 @@ function Cart() {
 
         <div className='info_product'>
         <div className='name'><h3>{searchParams.get("name")}</h3></div>
-        <p>5 Відгуків</p>
+        <p>{feedbacks.length} Відгуків</p>
                 <div className='rating'>
                   <span className="star" >★</span>
                   <span className="star" >★</span>
@@ -98,7 +122,7 @@ function Cart() {
     
                   <p class="original-price">${searchParams.get("price")} </p>
                   <p class="discount">Знижка: ${searchParams.get("discount")}</p>
-                  <p class="final-price">Кінцева ціна: ${searchParams.get("price")-20}</p>
+                  <p class="final-price">Кінцева ціна: ${searchParams.get("price")-searchParams.get("discount")}</p>
     
                   <button className="AddbuttonProduct" onClick={handleAddToCart} >Додати у кошик</button>
               
@@ -119,7 +143,7 @@ function Cart() {
         <div className="tab-content">
           {activeTab === 'Опис'  && (
   <div>
-              <p>Категорії: {searchParams.get("category")}</p>
+               <p>Категорія: {category_product ? category_product.name : 'Категорія не знайдена'}</p>
               <p>Модель:{searchParams.get("cod")}</p>
               <p>{searchParams.get("description")}</p>
               </div> )

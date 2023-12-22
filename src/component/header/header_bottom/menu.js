@@ -21,9 +21,10 @@ function Menu()
             <li> <DropdownMenu/></li>
             <li><Link to="/">Головна</Link></li>
             <li><Link to="/cardProduct">Продукти</Link></li>
-            <li><Link to='/cart'>Картка продукту</Link></li>
             <li><Link to='/contact' >Контакти</Link></li>
             <li><Link to='/deliveryPayment' >Оплата та доставка</Link></li>
+            {/* <li><Link to='/admin' >Admin</Link></li> */}
+            <li><Link to='/basket' >Корзина</Link></li>
         </ul>
         </nav>
 

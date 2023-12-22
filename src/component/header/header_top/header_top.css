@@ -22,8 +22,27 @@
   margin-right: 10px;
   margin-top: 2.5px;
 }
+.aut
+{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 50px;
+  margin-top: 2.5px;
+  cursor: pointer;
+ 
+}
+
+.aut:hover
+{
+  color: #f8f8f8;
+}
 .info a
 {
   color: #40151f;
   text-decoration: none;
+}
+.info a:hover
+{
+  color: #f8f8f8;
 }

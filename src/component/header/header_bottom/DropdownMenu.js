@@ -1,59 +1,41 @@
-import React, { Component } from 'react';
+import React, { useState,useEffect,useRef  } from 'react';
 import './dropdown.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate  } from 'react-router-dom';
 
-class DropdownMenu extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isOpen: false,
-      menuPosition: { top: 0, left: 0 },
-    };
-  }
+function DropdownMenu()
+{
+  
+ 
+    const [categories, setCategory] = useState([]);
+    const navigate = useNavigate ();
+    useEffect(() => {
+      fetch("http://127.0.0.1:8000/api/category")
+        .then((response) => response.json())
+        .then((json) => {
+          console.log(json); // Log the data for debugging
+          setCategory(json);
+        });
+    }, []);
 
-  toggleMenu = () => {
-    this.setState((prevState) => ({
-      isOpen: !prevState.isOpen,
-    }));
-
-    if (this.menuRef) {
-      const menuPosition = this.menuRef.getBoundingClientRect();
-      this.setState({ menuPosition });
-    }
+    const handleCategoryClick = (categoryId) => {
+      navigate.useNavigate(`/category/${categoryId}`);
   };
-
-  render() {
-    const categories = [
-      'Аніме фігурки',
-      'Манга',
-      'Комікси',
-      'Ранобе',
-      'Одяг',
-      'Листівки',
-      'Аромасвічки',
-      'Плакати',
-      'Чашки',
-      'Наклейки, стікери',
-      'Брелоки',
-    ];
-
-    const menuClass = this.state.isOpen ? 'menu active' : 'menu';
-
     return (
-      <div className="dropdown">
-        <button onClick={this.toggleMenu}>Категорії</button>
-        {this.state.isOpen && (
-          <ul className={menuClass} ref={(ref) => (this.menuRef = ref)}>
-            {categories.map((category, index) => (
-              <li key={index}>
-                <Link to={`/category/${category}`}>{category}</Link>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
+      <>
+        <div class="dropdown">
+          <button class="dropbtn">Категорії</button>
+          <div class="dropdown-content">
+            {categories.map((category) => (
+                  <Link to={`/category/${category.id}?id=${category.id}`}  key={category.id}  onClick={() => handleCategoryClick(category.id)}> 
+                          <h2>{category.name}</h2>
+                </Link>
+              ))}
+          </div>
+        </div>
+      </>
     );
-  }
 }
 
 export default DropdownMenu;
+
+

@@ -1,5 +1,5 @@
 .delivery-payment-form {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 20px;
     background-color: #e4c8cd;
@@ -11,6 +11,12 @@
     font-size: 24px; 
     font-weight: bold;
     letter-spacing: 2px;
+   
+}
+.delivery-payment-form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .delivery-payment-form h2 {
@@ -29,9 +35,7 @@
     margin-bottom: 5px;
 }
 
-.delivery-payment-form select,
-input[type="radio"] {
-   
+.delivery-payment-form select, input[type="radio"] {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
